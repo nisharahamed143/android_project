@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:project_one/screens/home_screen.dart';
 import 'package:project_one/widgets/navigation_widget.dart';
 
 class NavigationScreen extends StatefulWidget {
@@ -13,7 +14,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
   int currentIndex = 0;
 
   final List<Widget> pages = const [
-    Center(child: Text("Home")),
+    HomeScreen(),
     Center(child: Text("Search")),
     Center(child: Text("Notifications")),
     Center(child: Text("Profile")),
